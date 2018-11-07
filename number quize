@@ -1,0 +1,20 @@
+from random import randint
+
+#randint(최소값, 최대값):최소값부터 최대값까지 중 임의의 정수를 리턴함
+answer = randint(1, 100)
+i=0
+
+while (i<10):
+    print("램덤 숫자 게임에 오신걸 환영합니다.")
+    g = input("숫자를 맞춰봐 : ")
+    guess = int(g)
+    if (guess == answer):
+        print("이겨서 좋냐?")
+        break
+    elif (guess > answer):
+        print("너무 커 바보야!")
+    else :
+        print("너무 작아 바보야!")
+    i = i+1
+
+    print("그만하자 지친다. 답은 이거야! 바보야! ", answer)
