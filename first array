@@ -1,0 +1,10 @@
+array = ['Life', 'is', 'too', 'short','you', 'need', 'python']
+print(array[4], array[0])
+def myRvrs(arr):
+    nArray=[]
+    for x in range(len(arr)-1,-1,-1):
+        nArray.append(arr[x])
+    return nArray
+
+print("original array: ", array)
+print("reverse array: ", myRvrs(array))
